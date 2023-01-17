@@ -18,3 +18,27 @@ Written using the "modern" [:target :esm](https://shadow-cljs.github.io/docs/Use
 Only relevant change over the JS version was adding `"type": "module` to the `"background"` in `manifest.json`. As well as `type="module"` in the `popup.html`.
 
 For me the notification doesn't actually show and I'm not sure why. Might be because I blocked Chrome from showing Notifications, but I can't find any indicator about any of that. The code does load and run fine which is all I wanted to show.
+
+
+target only is :browser but it is :custom??
+disable?? chagnge to brwoser it trying to connect ws//9630
+
+
+If you want to build a specific thing you should configure a build using one of the provided build-targets. Most of them automatically inject the necessary code for a ClojureScript REPL. It should not require any additional configuration. For the build CLJS REPL to work you need 2 things
+
+a running watch for your build
+
+connect the JS runtime of the :target. Meaning if you are using the :browser target you need to open a Browser that has the generated JS loaded. For node.js builds that means running the node process.
+
+Once you have both you can connect to the CLJS REPL via the command line or from the Clojure REPL.
+
+
+https://github.com/Termina/tab-searching/blob/master/shadow-cljs.edn
+
+https://github.com/binaryage/chromex
+
+https://github.com/thheller/shadow-cljs/issues/279
+
+https://github.com/thheller/shadow-cljs/issues/902
+
+https://clojurians-log.clojureverse.org/shadow-cljs/2019-11-05

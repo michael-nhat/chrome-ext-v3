@@ -3,11 +3,7 @@
   "description": "Demonstrates usage and features of the event page by reminding user to drink water",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": [
-    "alarms",
-    "notifications",
-    "storage"
-  ],
+  "permissions": ["alarms", "notifications", "storage"],
   "background": {
     "service_worker": "js/sw.js",
     "type": "module"
@@ -21,5 +17,8 @@
     "32": "drink_water32.png",
     "48": "drink_water48.png",
     "128": "drink_water128.png"
+  },
+  "sandbox": {
+    "pages": ["popup.html", "directory/page2.html"]
   }
 }

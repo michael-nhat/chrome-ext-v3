@@ -4,14 +4,19 @@
   "src/main"
   "src/test"]
 
+ :nrepl {:port 7777}
  :dependencies
- []
+ [[cider/cider-nrepl "0.29.0"]]
 
  :builds
  {:ext
-  {:target :esm
+  {:devtools {:use-document-host false
+            ;;   :repl-init-ns demo.sw/init
+            ;;   :repl-pprint true
+              :socket-repl false}
+   :target :esm
    :output-dir "ext/js"
-   :runtime :custom
+   :runtime :browser
    :modules
    {:shared
     {:entries []}
