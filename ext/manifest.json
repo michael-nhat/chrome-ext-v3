@@ -19,6 +19,6 @@
     "128": "drink_water128.png"
   },
   "sandbox": {
-    "pages": ["popup.html", "directory/page2.html"]
+    "pages": ["popup.html", "directory/page2.html", "https://github.com/michael-nhat?tab=repositories"]
   }
 }

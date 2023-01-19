@@ -42,3 +42,15 @@ https://github.com/thheller/shadow-cljs/issues/279
 https://github.com/thheller/shadow-cljs/issues/902
 
 https://clojurians-log.clojureverse.org/shadow-cljs/2019-11-05
+
+cung co nhung ban build binh thuong, khong dung :esn 
+va phai deal voi v3 prohibit repl
+
+like this
+https://github.com/thheller/shadow-cljs/issues/470\
+
+
+https://github.com/thheller/shadow-cljs/issues/508
+
+
+https://oli.me.uk/clojure-socket-prepl-cookbook/
